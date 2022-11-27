@@ -4,6 +4,7 @@ import java.io.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
+//Jsp的本质是serverLet,说白了就是封装完给我们方便使用，Jsp方便我们排版HTML。
 @WebServlet(name = "helloServlet", value = "/hello-servlet")
 public class HelloServlet extends HttpServlet {
     private String message;
