@@ -11,13 +11,13 @@
 <body>
 <%--setAttribute--%>
 <%
-    pageContext.setAttribute("userName1" , "张三");
-    request.setAttribute("userName2" , "李四");
-    session.setAttribute("userName3" , "王五");
-    application.setAttribute("userName4" , "赵六");
+    pageContext.setAttribute("userName1", "张三");
+    request.setAttribute("userName2", "李四");
+    session.setAttribute("userName3", "王五");
+    application.setAttribute("userName4", "赵六");
 %>
 <%--客户端跳转界面--%>
-<a href="out.jsp">确认提交</a>
+<a href="1.3JSP四大域对象_out.jsp">确认提交</a>
 <%--客户端跳转无法获取Requst数据--%>
 </body>
 </html>

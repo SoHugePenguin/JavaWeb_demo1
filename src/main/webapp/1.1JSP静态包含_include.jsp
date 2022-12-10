@@ -9,6 +9,6 @@
     <title>静态包含</title>
 </head>
 <body>
-<%@include file="zuoCe.jsp" %>
+<%@include file="1.1JSP静态包含_zuoCe.jsp" %>
 </body>
 </html>

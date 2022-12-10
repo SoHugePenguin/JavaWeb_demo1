@@ -18,7 +18,9 @@
 <%--
 无参动态包含
 --%>
-<jsp:include page="zuoCe.jsp"></jsp:include>
+<jsp:include page="1.2JSP动态包含_zuoCe.jsp">
+    <jsp:param name="" value=""/>
+</jsp:include>
 <%--
 有参动态包含
 --%>
@@ -27,7 +29,7 @@
     String str = "yourName";
     Long account = ran.nextLong(88888888) + 11111111;
 %>
-<jsp:include page="touBu.jsp">
+<jsp:include page="1.2JSP动态包含_touBu.jsp">
     <jsp:param name="userName" value="<%=str%>"/>
     <jsp:param name="userAccount" value="<%=account%>"/>
 </jsp:include>

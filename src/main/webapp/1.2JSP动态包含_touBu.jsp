@@ -3,7 +3,7 @@
   Date: 2022/12/10
   Time: 21:17
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <body>
 <div style="background-color: cadetblue; border: 2px solid orangered">

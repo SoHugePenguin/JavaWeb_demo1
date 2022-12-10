@@ -3,12 +3,12 @@
   Date: 2022/11/28
   Time: 17:36
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="utf-8" %>
 <html>
 <head>
     <title>Title</title>
     <style type="text/css">
-        body{
+        body {
             background-color: black;
             color: antiquewhite;
         }

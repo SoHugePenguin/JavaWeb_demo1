@@ -1,11 +1,15 @@
 package com.example.javawebdemo1;
 
-import java.io.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 //Jsp的本质是serverLet,说白了就是封装完给我们方便使用，Jsp方便我们排版HTML。
-@WebServlet(name = "helloServlet", value = "/hello-servlet")
+//urlPatterns="/helloServlet"可以直接省写成"/helloServlet"
+@WebServlet("/helloServlet")
 public class HelloServlet extends HttpServlet {
     private String message;
 
