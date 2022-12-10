@@ -41,7 +41,9 @@
             <img src="img/top_center.jpg" width="506" height="29" alt="">
         </div>
         <div id="input_id">
-            <input type="text" class="input1"/>
+            <label>
+                <input type="text" class="input1"/>
+            </label>
             <a href="#" class="button1">
                 <div>搜索</div>
             </a>
@@ -245,12 +247,12 @@
         <ul>
             <li>
                 <h2>手机e乐购</h2>
-                <img src="./img/footer_ewm_01.png" alt=""/>
+                <img src="img/footer_ewm_01.png" alt=""/>
                 <p>下载移动客户端</p>
             </li>
             <li>
                 <h2>e乐购微信</h2>
-                <img src="./img/footer_ewm_02.png" alt=""/>
+                <img src="img/footer_ewm_02.png" alt=""/>
                 <p>e乐购官方微信</p>
             </li>
         </ul>

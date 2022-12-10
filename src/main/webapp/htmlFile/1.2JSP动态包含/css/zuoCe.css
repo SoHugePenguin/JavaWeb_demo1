@@ -1,0 +1,215 @@
+body {
+	margin: 0;
+	background-color: darkkhaki;
+}
+#zuoCe {
+	height: 150%;
+	width: 40px;
+	background-color: #444851;
+	color: white;
+	font-size: 13px;
+	position: fixed;
+	top: -43px;
+	right: 0;
+}
+
+.line1 {
+	width: 100%;
+	height: 1px;
+	background: #575A62;
+	margin-bottom: 15px;
+	position: relative;
+	top: 60px;
+}
+
+.line2 {
+	width: 100%;
+	height: 1px;
+	background: #575A62;
+	margin-bottom: 15px;
+	position: relative;
+	top: 100px;
+}
+
+#zuoCe .zuoCe1 {
+	background: url(../img/icon_list.png) no-repeat -200px -410px;
+	width: 20px;
+	height: 25px;
+	position: relative;
+	top: 60px;
+	left: 10px;
+}
+
+.zuoCe1_p {
+	position: relative;
+	top: 60px;
+	left: 6px;
+}
+
+#zuoCe .zuoCe2 {
+	background: url(../img/icon_list.png) no-repeat -80px -0px;
+	width: 25px;
+	height: 25px;
+	position: relative;
+	top: 80px;
+	left: 5px;
+}
+
+.zuoCe2_p {
+	width: 20px;
+	position: relative;
+	top: 80px;
+	left: 14px;
+}
+
+.zuoCe2_circle {
+	background: url(../img/icon_list.png) no-repeat -85px -64px;
+	width: 25px;
+	height: 25px;
+	position: relative;
+	top: 80px;
+	left: 10px;
+}
+
+.zuoCe2_circle_p {
+	position: relative;
+	top: 45px;
+	left: 16px;
+}
+
+#zuoCe .zuoCe3 {
+	background: url(../img/icon_list.png) no-repeat -80px -187px;
+	width: 25px;
+	height: 25px;
+	position: relative;
+	top: 110px;
+	left: 5px;
+}
+
+.zuoCe3_p {
+	position: relative;
+	top: 110px;
+	left: 6px;
+}
+
+.line3 {
+	width: 100%;
+	height: 1px;
+	background: #575A62;
+	margin-bottom: 15px;
+	position: relative;
+	top: 110px;
+}
+
+.erWeiMa {
+	background: url(../img/icon_list.png) no-repeat -170px 0px;
+	width: 25px;
+	height: 25px;
+	position: relative;
+	top: 200px;
+	left: 10px;
+}
+
+.keFu {
+	background: url(../img/icon_list.png) no-repeat -170px -59px;
+	width: 25px;
+	height: 25px;
+	position: relative;
+	top: 230px;
+	left: 9px;
+}
+
+.chuanSon {
+	background: url(../img/icon_list.png) no-repeat -80px -250px;
+	width: 25px;
+	height: 25px;
+	position: relative;
+	top: 260px;
+	left: 8px;
+}
+
+.neiRong1 {
+	font-weight: bold;
+	color: white;
+	width: 200px;
+	height: 40px;
+	background-color: darkred;
+	margin-left: 60px;
+	margin-top: 20px;
+	float: left;
+}
+
+.neiRong1_div {
+	background: url(../img/icon_list.png) no-repeat -36px -128px;
+	width: 25px;
+	height: 16px;
+	position: relative;
+	left: 170px;
+	top: 19px;
+}
+
+.neiRong1_p {
+	position: relative;
+	left: 60px;
+	top: -24px;
+}
+
+.neiRong2 {
+	color: red;
+	font-weight: bold;
+	float: left;
+	width: 150px;
+	height: 38px;
+	margin-top: 20px;
+}
+
+.neiRong2 p {
+	position: relative;
+	left: 60px;
+	top: -8px;
+}
+
+.neiRong3 {
+	color: black;
+	font-weight: bold;
+	float: left;
+	width: 150px;
+	height: 38px;
+	margin-top: 20px;
+}
+
+.neiRong3 p {
+	position: relative;
+	left: 45px;
+	top: -8px;
+}
+
+.neiRong4 {
+	color: black;
+	font-weight: bold;
+	float: left;
+	width: 150px;
+	height: 38px;
+	margin-top: 20px;
+}
+
+.neiRong4 p {
+	position: relative;
+	left: 45px;
+	top: -8px;
+}
+
+.neiRong5 {
+	color: black;
+	font-weight: bold;
+	float: left;
+	width: 150px;
+	height: 38px;
+	margin-top: 20px;
+}
+
+.neiRong5 p {
+	position: relative;
+	left: 45px;
+	top: -8px;
+}
