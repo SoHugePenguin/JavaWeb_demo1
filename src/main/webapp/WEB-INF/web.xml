@@ -19,7 +19,7 @@
     </description>
     <!-- 初始化页面地址 -->
     <welcome-file-list>
-        <welcome-file>htmlFile/导航页.jsp</welcome-file>
-        <welcome-file>htmlFile/1.0JSP入门/qwq.jsp</welcome-file>
+        <welcome-file>1.0JSP入门_qwq.jsp</welcome-file>
+        <welcome-file>1.4_login.jsp</welcome-file>
     </welcome-file-list>
 </web-app>
