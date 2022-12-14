@@ -14,8 +14,13 @@ import java.sql.ResultSet;
 import static com.example.javawebdemo1.jdbc.Main.connection;
 import static com.example.javawebdemo1.jdbc.Main.druid_connection;
 
-@WebServlet("/login")
-public class LoginServlet extends HttpServlet {
+/**
+ * @Title registerServlet
+ * @Author SoHugePenguin
+ * @date 2022/12/14 19:10
+ */
+@WebServlet("/register")
+public class registerServlet extends HttpServlet {
     private static final String salt = "chen114514";
 
     @Override
@@ -32,39 +37,45 @@ public class LoginServlet extends HttpServlet {
         if (userName == null || "".equals(userName.trim())) {
             //跳转服务器
             req.setAttribute("message", "用户名不能为空");
-            req.getRequestDispatcher("1.4login.jsp").forward(req, resp);
+            req.getRequestDispatcher("1.4注册界面.jsp").forward(req, resp);
             return;
         }
         if (userPwd == null || "".equals(userPwd.trim())) {
             //跳转服务器
             req.setAttribute("message", "密码不能为空");
-            req.getRequestDispatcher("1.4login.jsp").forward(req, resp);
+            req.getRequestDispatcher("1.4注册界面.jsp").forward(req, resp);
             return;
         }
 
         //MD5加密+加盐二次加密
         userPwd = md5.transform(userPwd, salt);
 
-        //校对账号密码
+        //新增数据库
         try {
             //建立MySQL数据库连接
             druid_connection();
             //在数据库对应的数据表(login_List)查询数据，如果查到就是正确反之错误
-            String select = "select * from login_List where user =  ? and password = ?";
+            String select = "select * from login_List where user =  ?";
             PreparedStatement st = connection.prepareStatement(select);
+
+            String addSelect = "insert into login_list(user,password) values( ? , ? )";
+            PreparedStatement st2 = connection.prepareStatement(addSelect);
             st.setString(1, userName);
-            st.setString(2, userPwd);
             //防sql注入原理：遇到特殊字符自动\转义
             ResultSet set = st.executeQuery();
             if (set.next()) {
-                //send服务器前往登录成功界面
-                req.getSession().setAttribute("userName", userName);
-                resp.sendRedirect("1.4_success.jsp");
+                req.setAttribute("message", "该用户名已存在！");
             } else {
-                req.setAttribute("message", "用户名或密码有误！");
-                req.getRequestDispatcher("1.4login.jsp").forward(req, resp);
+                st2.setString(1, userName);
+                st2.setString(2, userPwd);
+                st2.executeUpdate();
+                req.setAttribute("message", "你已经成功注册，将在3秒内跳转至登录界面");
+                req.setAttribute("back", true);
             }
+            req.getRequestDispatcher("1.4注册界面.jsp").forward(req, resp);
             //释放资源
+            st.close();
+            st2.close();
             set.close();
         } catch (Exception e) {
             throw new RuntimeException(e);
